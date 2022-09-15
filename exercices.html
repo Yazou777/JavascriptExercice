@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices formulaire</title>
+</head>
+<body>
+ <form action="http://bienvu.net/script.php" method="get"> 
+
+
+    <fieldset>
+        <legend>Coordonnées</legend>
+             <label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom"><br>
+                <label for="prenom">Votre prénom* :</label><input type="text" name="prenom" id="prenom">
+                <p></p>
+                <label for="sexe">Sexe* :</label>        <input type="radio" name="sexe" value="feminin"> Féminin
+                                                         <input type="radio" name="sexe" value="masculin"> Masculin 
+                <p></p>                                          
+              
+                <label for="ddn">Date de naissance* :</label><input type="date" name="ddn" id="ddn"><br>
+                <label for="cp">Code postal* :</label><input type="text" name="cp" id="cp"><br>
+                <label for="adresse">Adresse :</label><input type="text" name="adresse" id="adresse"><br>
+                <label for="ville">Ville :</label><input type="text" name="ville" id="ville"><br>
+                <label for="?">Email* :</label><input type="email" name="email" placeholder="dave.loper@afpa.fr"><br>
+    </fieldset>
+    
+
+    <fieldset>
+        <legend>Votre demande</legend>
+           <label for="sujet">Sujet* :</label>
+           <select id="sujet">
+                <option value="" selected>Veuillez séléctionner un sujet</option>
+                <option value="wtf">mes commandes</option>
+                <option value="wtf">wtf</option>
+                <option value="wtf">wtf</option>
+                <option value="wtf">wtf</option>
+           </select>
+
+           <p></p>
+
+           <label for="votrequestion">Votre question* :</label><textarea name="commentaire" rows="2" cols="20"></textarea>
+                
+     </fieldset>
+
+     <p></p>
+
+     <input type="checkbox" name="obligatoire" value="contrat" required title="case obligatoire"> <label for="obligatoire">* J'accepte le traitement informatique de ce formulaire </label>
+     
+     <p></p>
+
+     <button type="submit">Envoyer</button> <button type="submit">Annuler</button>
+
+
+
+ </form>
+    
+</body>
+</html>
