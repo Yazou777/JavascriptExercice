@@ -95,3 +95,12 @@ function boucle(x)
 
 boucle(0); // appel initial de la fonction
 */
+var x = prompt("entrez un nombre");
+var y = prompt("Entrez un multiplicateur");
+function produit(x ,y)
+{ 
+var resultat = x * y;
+return resultat;
+}
+var egal = produit(x ,y);
+console.log(produit(x ,y));
