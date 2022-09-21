@@ -77,7 +77,7 @@ function AfficheTab ()
 {
     for (var i = 0; i < nb; i++) 
     {
-       console.log("contenu tableau ["+i+"] : "+tableau);
+       console.log("contenu tableau ["+i+"] : "+tableau[i]);
     }
     return tableau;
 }
@@ -86,7 +86,7 @@ AfficheTab();
 
 function RechercheTab (recherche)
 {
-    console.log(tableau[recherche]);
+    console.log("contenu du poste ["+recherche+"] :"+tableau[recherche]);
 }
 RechercheTab(prompt("Quelle numéro de poste voulez vous voir? Poste Numero :"));
 
@@ -95,12 +95,12 @@ function InfoTab()
     function compareNombres(a, b) {
         return a - b;
       }
-console.log(tableau.sort(compareNombres));
-console.log(tableau[nb-1]);
+console.log("le tableau trié en order croisant : "+tableau.sort(compareNombres));
+console.log("la plus grande valeur est : "+tableau[nb-1]);
 const initialValue = 0;
 const sumWithInitial = tableau.reduce((previousValue, currentValue) => previousValue + currentValue, initialValue);
-console.log(sumWithInitial);
-console.log(sumWithInitial/nb);
+console.log("la somme des valeurs = "+sumWithInitial);
+console.log("la moyenne est "+sumWithInitial/nb);
 }
 InfoTab();
 
@@ -123,11 +123,8 @@ function sort(tableau){
     } while(changed);
 }
 
-var tableau = [5, 8, 11, 6, 1, 9, 3];
 sort(tableau);
 console.log(tableau);
-
-
 
 
 
