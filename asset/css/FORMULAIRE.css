@@ -1,0 +1,64 @@
+html {
+    font-size: 2rem;
+}
+#obligatoire{
+   display:inline;
+    color: brown;
+}
+.alignement {
+    display :flex; 
+    margin-bottom: 10px;
+   
+}
+
+ select {
+    color: blue;
+   
+}
+
+.etoile {
+    display:inline-block;
+    color: red;
+}
+
+form {
+   padding-left: 10%;
+}
+label {
+    font-weight: bolder;
+    width: 45%;
+    height: auto;
+}
+input {
+    width: 20%;
+}
+
+.center {
+    line-height: 3rem;
+}
+
+.fin {
+    display: flex;
+   justify-content: center;
+
+}
+#menu {
+   
+  
+    width: 45%;
+    height: auto;
+  
+}
+
+.menu {
+   font-size: 1rem;
+   
+}
+.area {
+    display:flex;
+}
+
+#carré,#adress {
+    width: 20%;
+}
+

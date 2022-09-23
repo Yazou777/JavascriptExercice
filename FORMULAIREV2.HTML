@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/FORMULAIREV2.css" >
+    <title>Nous contacter</title>
+</head>
+<body>
+    
+  
+          <h1 id="contact">Vos coordonnées :  </h1>
+        
+         
+                <div class="etoile">*</div> <div id=obligatoire> Ces zones sont obligatoires pour envoyer le formulaire.</div> 
+     <section>
+            <form action="http://bienvu.net/script.php" method="post" name="form1" onSubmit="return checkForm(this);"> 
+
+                 <article>
+                         <label for="nom">Société :</label>
+                            <label for="prenom">Personne à contacter :</label>
+                            <label for="votrequestion">Adresse de l'entreprise :</label>
+                            <label for="ddn">Code Postal :</label>
+                            <label for="cp">Ville :</label>
+                            <label for="?">E-mail :</label>
+                            <label for="adresse">Téléphone :</label>
+                            <label for="ddn">Sélectionnez l'environnement technique du projet :</label>
+                            <label for="sujet"></label>
+                       <select id="sujet" required title="case obligatoire">
+                            <option value="" selected>Choissisez</option>
+                            <option value="wtf">Access</option>
+                            <option value="wtf">Java</option>
+                            <option value="wtf">Delphi</option>
+                            <option value="wtf">Windev</option>
+                            <option value="wtf">Visual Basic</option>
+                            <option value="wtf">Power Builder</option>
+                            <option value="wtf">Internet</option>
+                            <option value="wtf">Intranet</option>
+                            <option value="wtf">Windows NT</option>
+                            <option value="wtf">Unix</option>
+                            <option value="wtf">SQL Server</option>
+                            <option value="wtf">Oracle</option>
+                            <option value="wtf">Autres...</option>
+                       </select>
+                       <p></p>
+                       <button type="submit">Envoyer</button> <button type="submit">Effacer</button>
+            
+                 </article>
+            <aside>
+                <input type="text" name="nom" id="nom" required title="case obligatoire" > 
+                <input type="text" name="prenom" id="prenom" required title="case obligatoire"> 
+                <textarea name="commentaire" rows="2" cols="20" required title="case obligatoire"></textarea> 
+                <input type="text" name="ddn" id="ddn" required title="case obligatoire" >
+                <input type="text" name="cp" id="cp" required title="case obligatoire">
+                <input type="email" name="email"  required title="case obligatoire" >
+                <input type="tel" name="adresse" id="adresse"> 
+                <input type="text" name="ddn" id="ddn" required title="case obligatoire" ><br>
+
+            </aside>
+        </form>          
+                 
+           
+                
+            
+            
+            
+            
+    </section>
+ 
+
+    
+</body>
+</html>
