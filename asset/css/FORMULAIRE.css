@@ -18,6 +18,9 @@ html {
 
 .etoile {
     display:inline-block;
+    margin-left: 20px;
+    bottom: 10px;
+    position: relative;
     color: red;
 }
 
@@ -40,7 +43,11 @@ input {
 .fin {
     display: flex;
    justify-content: center;
+}
 
+.bouton {
+    font-size: 1rem;
+    margin:5px;
 }
 #menu {
    
@@ -58,7 +65,7 @@ input {
     display:flex;
 }
 
-#carré,#adress {
+#tech,#adress {
     width: 20%;
 }
 

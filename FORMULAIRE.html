@@ -14,41 +14,40 @@
         
             <article>
                 <div class="etoile">*</div> <div id=obligatoire> Ces zones sont obligatoires pour envoyer le formulaire.</div> 
-            <form action="http://bienvu.net/script.php" method="post" name="form1" onSubmit="return checkForm(this);"> 
+            <form action="" method="post" name="form1" onSubmit="return checkForm(this);"> 
 
 
 
                         <div class="alignement">
-                                    <label for="nom">Société :</label>
-                                    <input type="text" name="nom" id="nom" required title="case obligatoire" > 
+                                    <label for="societe">Société :</label>
+                                    <input type="text" name="societe" id="societe" value="" required title="case obligatoire" > 
                                     <div class="etoile">*</div> 
                         </div>
 
 
                         <div class="alignement">
-                                    <label for="prenom">Personne à contacter :</label>
-                                    <input type="text" name="prenom" id="prenom" required title="case obligatoire"> 
+                                    <label for="pac">Personne à contacter :</label>
+                                    <input type="text" name="pac" id="pac" required title="case obligatoire"> 
                                     <div class="etoile">*</div>
                         </div>
 
 
                          <div class="alignement">
                                      <label for="votrequestion" class="center">Adresse de l'entreprise :</label>
-                                     <textarea id=adress name="commentaire" rows="2" cols="20" required title="case obligatoire"></textarea>
-                                     <div class="etoile">*</div> 
+                                     <textarea id=adress name="commentaire" rows="2" cols="20" ></textarea>
                         </div>
 
 
                          <div class="alignement">
-                                    <label for="ddn">Code Postal :</label>
-                                    <input type="text" name="ddn" id="ddn" required title="case obligatoire" >
+                                    <label for="cp">Code Postal :</label>
+                                    <input type="text" name="cp" id="cp" required title="case obligatoire" >
                                     <div class="etoile">*</div>
                         </div>
 
                         
                          <div class="alignement">
-                                     <label for="cp">Ville :</label>
-                                     <input type="text" name="cp" id="cp" required title="case obligatoire">
+                                     <label for="ville">Ville :</label>
+                                     <input type="text" name="ville" id="ville" value="" required title="case obligatoire">
                                      <div class="etoile">*</div>
                         </div>
 
@@ -70,31 +69,31 @@
                                     <label for="ddn" id="projet" >Sélectionnez l'environnement technique du projet :</label>
                                     <p></p>
                  
-                       <select id="projet" class=menu required title="case obligatoire">
-                            <option value="" selected>Choissisez</option>
-                            <option value="wtf">Access</option>
-                            <option value="wtf">Java</option>
-                            <option value="wtf">Delphi</option>
-                            <option value="wtf">Windev</option>
-                            <option value="wtf">Visual Basic</option>
-                            <option value="wtf">Power Builder</option>
-                            <option value="wtf">Internet</option>
-                            <option value="wtf">Intranet</option>
-                            <option value="wtf">Windows NT</option>
-                            <option value="wtf">Unix</option>
-                            <option value="wtf">SQL Server</option>
-                            <option value="wtf">Oracle</option>
-                            <option value="wtf">Autres...</option>
+                       <select id="pro" class=menu >
+                            <option value="" selected id="optS">Choissisez</option>
+                            <option class="choix" value="Access">Access</option>
+                            <option value="java">Java</option>
+                            <option value="Delphi">Delphi</option>
+                            <option value="Windev">Windev</option>
+                            <option value="Visual basic">Visual Basic</option>
+                            <option value="Power Builder">Power Builder</option>
+                            <option value="Internet">Internet</option>
+                            <option value="Intranet">Intranet</option>
+                            <option value="Windows NT">Windows NT</option>
+                            <option value="Unix">Unix</option>
+                            <option value="SQL Server">SQL Server</option>
+                            <option value="Oracle">Oracle</option>
+                            <option value="Autres...">Autres...</option>
                        </select>
                     </div>
 
-                    <textarea id="carré" name="commentaire" rows="2" cols="20" required title="case obligatoire"></textarea>
+                    <textarea id="tech" name="commentaire" rows="2" cols="20"  ></textarea>
          </div>
                        <p></p>
 
 
                        <div class="fin">
-                       <button type="submit">Envoyer</button> <button type="submit">Effacer</button>
+                       <button class="bouton" type="submit">Envoyer</button> <button class="bouton" type="submit">Effacer</button>
                        </div>
                       
             

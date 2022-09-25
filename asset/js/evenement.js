@@ -5,4 +5,6 @@ document.querySelector('#button1').onclick = function()
 {
     var prenom = document.querySelector('#input').value;
     alert('Vous avez saisi: '+prenom);
-}   
+} 
+
+
