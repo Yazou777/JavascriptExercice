@@ -64,14 +64,14 @@ function SaisieTab()
 var saisie = SaisieTab();
 alert(saisie);
 
-
+/*
 function GetInteger (lire)
 {
 var  x = Number(lire);
 return x;
 }
 var x =GetInteger (prompt("Donnez un entier"))
-console.log(x);
+console.log(x);*/
 
 function AfficheTab ()
 {

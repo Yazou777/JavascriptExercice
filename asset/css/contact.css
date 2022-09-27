@@ -33,3 +33,10 @@ footer a {
     color: white;
     
 }
+
+#vq {
+    display:flex;
+}
+.vq {
+    line-height: 3rem;
+}

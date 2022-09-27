@@ -19,7 +19,7 @@
     <nav class="menu">
         <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="tableau.html">Tableau</a></li>
+            <li><a href="copie_tableau.html">Tableau</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -29,12 +29,13 @@
 
     
     <section>
-          <h2> <p id="contact">Contact </p> </h2><br>
+        <article>
+          <h2 id="contact">Contact </h2><br>
         
             ___________________________________________________________________________________________________________________________________________________________ <p></p>
-            <article>
+           
             * Ces zones sont obligatoires <p></p>
-            <form action="http://bienvu.net/script.php" method="get"> 
+            <form action="http://bienvu.net/script.php" method="post" onSubmit="return checkForm(this)"> 
 
 
                 <fieldset>
@@ -42,7 +43,7 @@
                          <label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom" required title="case obligatoire" ><br>
                             <label for="prenom">Votre prénom* :</label><input type="text" name="prenom" id="prenom" required title="case obligatoire">
                             <p></p>
-                            <label for="sexe">Sexe* :</label>        <input type="radio" name="sexe" value="feminin" required title="case obligatoire"> Féminin
+                            <label for="sexe">Sexe* :</label>        <input type="radio" name="sexe" value="feminin" id="sexe" required title="case obligatoire"> Féminin
                                                                      <input type="radio" name="sexe" value="masculin"> Masculin 
                             <p></p>                                          
                           
@@ -50,7 +51,7 @@
                             <label for="cp">Code postal* :</label><input type="text" name="cp" id="cp" required title="case obligatoire"><br>
                             <label for="adresse">Adresse :</label><input type="text" name="adresse" id="adresse"><br>
                             <label for="ville">Ville :</label><input type="text" name="ville" id="ville"><br>
-                            <label for="?">Email* :</label><input type="email" name="email" placeholder="dave.loper@afpa.fr" required title="case obligatoire" ><br>
+                            <label for="email">Email* :</label><input type="email" name="email" id="email" placeholder="dave.loper@afpa.fr" required title="case obligatoire" ><br>
                 </fieldset>
                 
             
@@ -66,16 +67,16 @@
                        </select>
             
                        <p></p>
-            
-                       <label for="votrequestion">Votre question* :</label><textarea name="commentaire" rows="2" cols="20" required title="case obligatoire"></textarea>
-                            
+                    <div id="vq">
+                       <label class="vq" for="votrequestion">Votre question* :</label><textarea name="commentaire" rows="2" cols="20" id="votrequestion" required title="case obligatoire"></textarea>
+                    </div>       
                  </fieldset>
-             </article>
+             
         
             
                  <p></p>
             
-                 <input type="checkbox" name="obligatoire" value="contrat" required title="case obligatoire"> <label for="obligatoire">* J'accepte le traitement informatique de ce formulaire </label>
+                 <input type="checkbox" name="obligatoire" value="contrat" id="obligatoire" required title="case obligatoire"> <label for="obligatoire">* J'accepte le traitement informatique de ce formulaire </label>
                  
                  <p></p>
             
@@ -84,6 +85,7 @@
             
             
              </form>
+             </article>
     </section>
         ___________________________________________________________________________________________________________________________________________________________
 
@@ -96,22 +98,6 @@
         </ul>
 
     </footer>
-
-
-
-
-
-
-    </article>
-
-
-
-
-
-
-
-
-</section>
-    
+    <script src="/asset/js/eval5.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 var x = prompt("entrez un nombre");
 
-function produit(x)
+function TableMultiplication(x)
 { 
     var i = 1
     while (i <= 10)
@@ -11,4 +11,4 @@ i++;
     }
     return resultat;
 }
-var egal = produit(x);
+var egal = TableMultiplication(x);

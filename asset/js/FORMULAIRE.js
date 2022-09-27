@@ -3,22 +3,23 @@ document.getElementById('projet').innerHTML = "Sélectionnez <br>l'environnement
 
 function checkForm(f) {
     var x  = document.querySelector('#societe').value;
-    var filtre = new RegExp("^[a-z]+$");
+    var filtre = new RegExp("^[A-Za-z]+$");
     var resultat = filtre.test(x);
     console.log(resultat);
     if (resultat==false) {
         alert("Entrez seulement des caracteres dans la case Société");
         return false;
     }
-    
+
     var x  = document.querySelector('#pac').value;
-    var filtre = new RegExp("^[a-z]+$");
+    var filtre = new RegExp("^[A-Za-z]+$");
     var resultat = filtre.test(x);
     console.log(resultat);
     if (resultat==false) {
         alert("Entrez seulement des caracteres dans la case Personne à contacter");
         return false;
     }
+
     var x  = document.querySelector('#cp').value;
     var filtre = new RegExp("^[0-9]{5}$");
     var resultat = filtre.test(x);
@@ -29,7 +30,7 @@ function checkForm(f) {
     }
     
     var x  = document.querySelector('#ville').value;
-    var filtre = new RegExp("^[a-z]+$");
+    var filtre = new RegExp("^[A-Za-z]+$");
     var resultat = filtre.test(x);
     console.log(resultat);
     if (resultat==false) {
