@@ -1,7 +1,7 @@
 var tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
 console.log(tab);
 console.log(tab.length)
-/*var prenom = prompt("Saisisez un prénom");*/
+
 
 
 function recherche(prenom)
@@ -13,16 +13,17 @@ while (i <tab.length)
   
 if ( tab[i] == prenom )
 {
-    console.log("trouvé");
+    console.log("trouvé : "+prenom);
     tab.splice(i,1);
     tab.length =10;
     console.log(tab);
     i=0;
-    recherche(prompt("Saisisez un prénom"));
+    var prenom=prompt("Saisisez un prénom");
 }
 i++;
 }
-console.log("error")
+alert("error");
+
 }
 recherche(prompt("Saisisez un prénom"));
 console.log(tab);
