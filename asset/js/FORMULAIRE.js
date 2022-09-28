@@ -40,11 +40,27 @@ function checkForm(f) {
 }
 
 
-document.querySelector('#menu').onclick = function menu() 
+/*document.querySelector('.menu').onclick = function menu() 
 {
-   var test= document.getElementById("pro").value;
+   var test= document.getElementById("pro").value;*/
  /*var projet=document.getElementById("pro").selectedIndex;
  var Pro= document.getElementById("pro").options[projet].value;*/
-console.log(test);
+/*console.log(test);
  document.getElementById('tech').innerHTML = test;
-}
+}*/
+/*
+  const select = document.getElementById("pro");
+  select.addEventListener("change", e => {
+    var selectvalue = e.target.value;
+    console.log(selectvalue);
+    document.getElementById('tech').value= selectvalue;
+  });
+*/
+ 
+  function plop() 
+  {
+    
+ document.getElementById('tech').value = document.getElementById("pro").value;
+  }
+ 
+ document.querySelector('.menu').addEventListener("change", plop);

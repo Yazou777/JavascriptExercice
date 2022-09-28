@@ -28,4 +28,6 @@ alert("error");
 recherche(prompt("Saisisez un prénom"));
 console.log(tab);
 console.log(tab.length)
+document.write(tab)
 
+console.log(tab.includes("Flavien" || "Audr"))
